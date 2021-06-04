@@ -7,13 +7,16 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
+    "react-audio-player": "^0.16.1",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-youtube": "^7.13.1",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "aws s3 sync build/ s3://hopethewatersdeepenough --acl public-read",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
